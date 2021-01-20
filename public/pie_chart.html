@@ -1,0 +1,131 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Business Plus</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Category', 'Annual Expenditure'],
+                ['I.T.', 39500],
+                ['Oversea Travel', 30000],
+                ['Transport', 5000],
+                ["Facility", 5000],
+                ['Admin', 3000],
+                ["Insurance", 7000]
+            ]);
+
+            var options = {
+                is3D: true,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mobile mobile-main">
+        <div class="search">
+            <h2 class="category-title">REPORT</h2>
+            <input class="search__bar" type="text" placeholder="Search">
+            <button class="search__btn">
+                <svg class="search__magnifier">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="container">
+            <div class="report">
+                <h1 class="report__title">Expense Distribution (HKD)</h1>
+                <div class="report__div">
+                    <div id="piechart_3d" style="width: 100%; height: 20rem;"></div>
+                </div>
+            </div>
+            <div class="report-summary">
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">I.T.</p>
+                    <p class="report-summary__item__lead">49500</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Oversea Travel</p>
+                    <p class="report-summary__item__lead">30000</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Transport</p>
+                    <p class="report-summary__item__lead">5000</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Facility</p>
+                    <p class="report-summary__item__lead">5000</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Admin</p>
+                    <p class="report-summary__item__lead">3000</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Insurance</p>
+                    <p class="report-summary__item__lead">7000</p>
+                </div>
+            </div>
+            <div class="report-stat">
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">MAX</p>
+                    <p class="report-stat__item__lead">I.T.</p>
+                    <p class="report-stat__item__lead">39500 (44.13%)</p>
+                </div>
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">MIN</p>
+                    <p class="report-stat__item__lead">Admin</p>
+                    <p class="report-stat__item__lead">3000 (3.35%)</p>
+                </div>
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">TOTAL</p>
+                    <p class="report-stat__item__lead">89500</p>
+                </div>
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">MEAN</p>
+                    <p class="report-stat__item__lead">14917</p>
+                </div>
+            </div>
+        </div>
+        <nav class="report-nav">
+            <a href="general.html" class="report-nav__icon-box">
+                <svg class="report-nav__icon" id="rotate__icon">
+                    <use xlink:href="img/sprite.svg#icon-stats-bars"></use>
+                </svg>
+                <p class="report-nav__text">Trend</p>
+            </a>
+            <a href="" class="report-nav__icon-box">
+                <svg class="report-nav__icon report-nav__icon-active">
+                    <use xlink:href="img/sprite.svg#icon-pie-chart"></use>
+                </svg>
+                <p class="report-nav__text report-nav__text-active">Distribution</p>
+            </a>
+            <a href="department.html" class="report-nav__icon-box">
+                <svg class="report-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-users"></use>
+                </svg>
+                <p class="report-nav__text">Department</p>
+            </a>
+            <a href="staff.html" class="report-nav__icon-box">
+                <svg class="report-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <p class="report-nav__text">Staff</p>
+            </a>
+        </nav>
+    </div>
+</body>
+
+</html>

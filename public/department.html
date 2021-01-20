@@ -1,0 +1,113 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Business Plus</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="mobile mobile-main">
+        <div class="search">
+            <h2 class="category-title">REPORT</h2>
+            <input class="search__bar" type="text" placeholder="Search">
+            <button class="search__btn">
+                <svg class="search__magnifier">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="container">
+            <div class="report">
+                <h1 class="report__title">Department (HKD)</h1>
+                <div class="report__div">
+                    <div class="bar cf" data-percent="98.75%" data-num="39500">
+                        <span class="label">I.T.</span>
+                    </div>
+                    <div class="bar cf" data-percent="45%" data-num="18000">
+                        <span class="label light">A & H</span>
+                    </div>
+                    <div class="bar cf" data-percent="57.5%" data-num="23000">
+                        <span class="label">S & M</span>
+                    </div>
+                    <div class="bar cf" data-percent="22.5%" data-num="9000">
+                        <span class="label light">Finance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="report-summary">
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">I.T.</p>
+                    <p class="report-summary__item__lead">39500</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Admin & HR</p>
+                    <p class="report-summary__item__lead">18000</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Sales & Marketing</p>
+                    <p class="report-summary__item__lead">23000</p>
+                </div>
+                <div class="report-summary__item">
+                    <p class="report-summary__item__heading">Finance</p>
+                    <p class="report-summary__item__lead">9000</p>
+                </div>
+            </div>
+            <div class="report-stat">
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">MAX</p>
+                    <p class="report-stat__item__lead">I.T.</p>
+                    <p class="report-stat__item__lead">39500 (44.13%)</p>
+                </div>
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">MIN</p>
+                    <p class="report-stat__item__lead">Finance</p>
+                    <p class="report-stat__item__lead">9000 (9.14%)</p>
+                </div>
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">TOTAL</p>
+                    <p class="report-stat__item__lead">89500</p>
+                </div>
+                <div class="report-stat__item">
+                    <p class="report-stat__item__head">MEAN</p>
+                    <p class="report-stat__item__lead">22375</p>
+                </div>
+            </div>
+        </div>
+        <nav class="report-nav">
+            <a href="general.html" class="report-nav__icon-box">
+                <svg class="report-nav__icon" id="rotate__icon">
+                    <use xlink:href="img/sprite.svg#icon-stats-bars"></use>
+                </svg>
+                <p class="report-nav__text">Trend</p>
+            </a>
+            <a href="pie_chart.html" class="report-nav__icon-box">
+                <svg class="report-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-pie-chart"></use>
+                </svg>
+                <p class="report-nav__text">Distribution</p>
+            </a>
+            <a href="" class="report-nav__icon-box">
+                <svg class="report-nav__icon report-nav__icon-active">
+                    <use xlink:href="img/sprite.svg#icon-users"></use>
+                </svg>
+                <p class="report-nav__text report-nav__text-active">Department</p>
+            </a>
+            <a href="staff.html" class="report-nav__icon-box">
+                <svg class="report-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <p class="report-nav__text">Staff</p>
+            </a>
+        </nav>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

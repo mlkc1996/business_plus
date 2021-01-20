@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Business Plus</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="mobile mobile-main">
+        <div class="search">
+            <h2 class="category-title">EXPENSE</h2>
+            <input class="search__bar" type="text" placeholder="Search">
+            <button class="search__btn">
+                <svg class="search__magnifier">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
+        </div>
+        <!--component toggle-->
+        <div class="container">
+            <div class="toggle toggle-up select">
+                <label class="toggle__label" for="check-1">
+                    <span class="toggle__header toggle__header-select">
+                        item selection
+                    </span>
+                </label>
+                <div class="select__details">
+                    <input type="checkbox" id="check-1" class="select__checkbox">
+                    <label for="check-1" class="select__item">
+                        <svg class="select__item__icon">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        <p class="select__item__first">ETC-001</p>
+                        <p class="select__item__second">Entertainment</p>
+                        <p class="select__item__third">Meal</p>
+                        <div class="quantity select__quantity">
+                            <button class="quantity__btn">-</button>
+                            <input type="text" value="1" class="quantity__value">
+                            <button class="quantity__btn">+</button>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="check-2" class="select__checkbox">
+                    <label for="check-2" class="select__item">
+                        <svg class="select__item__icon">
+                            <use xlink:href="img/sprite.svg#icon-earth"></use>
+                        </svg>
+                        <p class="select__item__first">OTC-001</p>
+                        <p class="select__item__second">Overseas</p>
+                        <p class="select__item__third">Meal,Logistics</p>
+                        <div class="quantity select__quantity">
+                            <button class="quantity__btn">-</button>
+                            <input type="text" value="1" class="quantity__value">
+                            <button class="quantity__btn">+</button>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="check-3" class="select__checkbox">
+                    <label for="check-3" class="select__item">
+                        <svg class="select__item__icon">
+                            <use xlink:href="img/sprite.svg#icon-airplane"></use>
+                        </svg>
+                        <p class="select__item__first">LTC-006</p>
+                        <p class="select__item__second">Local Transport</p>
+                        <p class="select__item__third">Tunnel Toll</p>
+                        <div class="quantity select__quantity">
+                            <button class="quantity__btn">-</button>
+                            <input type="text" value="1" class="quantity__value">
+                            <button class="quantity__btn">+</button>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <!--component toggle-->
+        </div>
+        <!-- component add-->
+        <a href="form.html" class="add-enquiry">></a>
+        <!-- component add-->
+    </div>
+</body>
+
+</html>
