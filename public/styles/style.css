@@ -30,11 +30,12 @@ body {
 
 .login {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center; }
   .login__logo {
-    animation: logo 1s ease-in-out; }
+    animation: logo 1s ease-in-out;
+    margin-bottom: 5rem; }
   .login h1 {
     margin-top: 2rem;
     text-align: center; }
@@ -65,10 +66,10 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     transition: all .1s;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6); }
+    box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.2); }
   .login__btn:active {
     transform: translateY(3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8); }
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4); }
   .login__input {
     border: none;
     padding: 1rem 2rem;
@@ -199,7 +200,7 @@ body {
     color: darkred;
     font-weight: 600;
     padding: .5rem;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     height: 100%; }
   .tasks__description {
     text-align: center; }
